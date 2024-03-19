@@ -52,6 +52,7 @@ nav a:hover {
     background-color: #e00505a1;
     text-align: center;
     color: white;
+    display: grid;
 }
 
 .jumbotron img {
@@ -81,14 +82,15 @@ nav {
 
 main {
     padding: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
 #content {
     flex: 5;
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem 2rem;
 }
 
