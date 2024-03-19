@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
       if (inputCaptcha === 'PRNU') {
         alert('Selamat! Captcha Anda lolos :D');
-        window.location.href = 'index.html';
+        window.location.href = 'log.html';
       } else {
         alert('Captcha Anda belum tepat :(');
         document.getElementById('submitButton').setAttribute('disabled', '');
