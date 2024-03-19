@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Komunikasi Multimedia</title>
+    <head>
+        <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Komunikasi Multimedia</title>
 
         <link rel="stylesheet" href="style.css">
 
@@ -12,49 +13,91 @@
           href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
           rel="stylesheet"
         />
-    <link rel="stylesheet" href="login.css">
-  </head>
-  <body>
-    <div class="contents">
-      <h2>Input Event Form</h2>
+    </head>
+    <body>
+        <div class="contents" hidden></div>
 
-      <div class="formContent">
-        <form id="formDataDiri" autocomplete="off">
-          <div class="form-element" id="fieldName">
-            <label for="inputNama">Nama Anda:</label><br />
-            <input
-              id="inputNama"
-              type="text"
-              name="nama"
-              placeholder="Nama Anda"
-              maxlength="15"
-            />
-            <br />
-            <label id="notifikasiSisaKarakter">
-              Sisa karakter: <span id="sisaKarakter"></span>
-            </label>
+        <header>
+          <div class="jumbotron">
+            <h1>KOMUNIKASI MULTIMEDIA</h1>
+            <p>
+                Materi Perkuliahan Mata Kuliah Komunikasi Multimedia
+            </p>
           </div>
+        <nav>
+            <ul>
+                <li><a href="#pengantar">Pengantar Pembelajaran</a></li>
+                <li><a href="#materi1">Materi 1</a></li>
+                <li><a href="#materi2">Materi 2</a></li>
+                <li><a href="#materi3">Materi 3</a></li>
+            </ul>
+        </nav>
+        </header>
 
-          <div class="form-element" id="fieldCaptcha">
-            <label for="inputCaptcha">Tulis <i>captcha</i> berikut.</label><br />
-            <img src="https://i.ibb.co/yy59QPB/Captcha.png" alt="Captcha" /><br />
-            <input
-              id="inputCaptcha"
-              type="text"
-              name="captcha"
-              placeholder="Tulis captcha di sini"
-            />
-            <br />
-            <p>Tekan Enter pada keyboard jika sudah selesai menulis <i>captcha</i></p>
-          </div>
+    <main>
+        <div id="content">
+            <article id="pengantar" class="card">
+                <h2>Pengantar Pembelajaran</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+                </p>
+            </article>
 
-          <div class="form-element">
-            <input id="submitButton" type="submit" value="Submit Data" disabled />
-          </div>
-        </form>
-      </div>
-    </div>
+            <article id="materi1" class="card">
+                <h2>Materi 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+                </p>
+            </article>
 
-    <script src="login.js"></script>
-  </body>
+            <article id="materi2" class="card">
+                <h2>Materi 2</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. </p>
+            </article>
+
+            <article id="materi3" class="card">
+                <h2>Materi 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+                </p>
+            </article>
+        </div>
+       
+
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Keterangan Mata Kuliah</h2>
+                </header>
+                <section>
+                    <h3>Informasi Lainnya</h3>
+               
+                    <table>
+                      <tr>
+                        <th>Nama Mata Kuliah: </th>
+                        <td>Komunikasi Multimedia</td>
+                      </tr>
+                      <tr>
+                        <th>Jadwal: </th>
+                        <td>Selasa</td>
+                      </tr>
+                      <tr>
+                        <th>Ruang Kelas: </th>
+                        <td>0201-0724-0203</td>
+                      </tr>
+                      <tr>
+                        <th>Dosen Pengajar: </th>
+                        <td>Agus Trisanto,M.T.,Ph.D.</td>
+                      </tr>
+                    </table>
+                  </section>
+            </article>
+        </aside>
+    </main>
+        
+        <footer>
+            <p>Komunikasi Multimedia 2024, Teknik elektro </p>
+        </footer>
+
+    </body>
 </html>
